@@ -1,0 +1,22 @@
+uuid: ba52d656-fa91-4730-aea3-a68755299977
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - reboot
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: reboot_help
+theme: reboot
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: bbae6b44-a173-4fb0-9999-5249d1978efb
+langcode: en
+status: false
+dependencies:
+  theme:
+    - reboot
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: reboot_primary_admin_actions
+theme: reboot
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

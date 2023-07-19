@@ -1,0 +1,22 @@
+uuid: 4db7eaa8-ddca-4ba0-8b2f-00ddac64df01
+langcode: en
+status: false
+dependencies:
+  theme:
+    - reboot
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: reboot_secondary_local_tasks
+theme: reboot
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

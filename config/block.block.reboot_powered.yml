@@ -1,0 +1,22 @@
+uuid: ce1fdf13-31fe-48fc-8574-0a707301f1ef
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - reboot
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: reboot_powered
+theme: reboot
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

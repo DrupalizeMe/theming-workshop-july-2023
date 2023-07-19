@@ -1,0 +1,22 @@
+uuid: afed7509-aae1-404a-afe3-f2162f6a1cf6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - reboot
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: reboot_content
+theme: reboot
+region: header
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
