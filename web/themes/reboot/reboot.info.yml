@@ -28,6 +28,7 @@ libraries:
   - reboot/messages
   - core/normalize
   - reboot/bootstrap
+  - reboot/global
 
 libraries-extend:
   user/drupal.user:

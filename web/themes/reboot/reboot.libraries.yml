@@ -62,11 +62,6 @@ dialog:
       css/components/dialog.css:
         weight: -10
 
-global:
-  css:
-    component:
-      css/global.css: {}
-
 dropbutton:
   version: VERSION
   css:
@@ -79,6 +74,12 @@ file:
     component:
       css/components/file.css:
         weight: -10
+
+global:
+  css:
+    theme:
+      css/global.css: {}
+
 image-widget:
   version: VERSION
   css:
