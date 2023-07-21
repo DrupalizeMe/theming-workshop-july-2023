@@ -102,6 +102,12 @@ node:
     component:
       css/components/node.css:
         weight: -10
+
+node--article:
+  css:
+    theme:
+      css/node--article.css: {}
+
 progress:
   version: VERSION
   css:

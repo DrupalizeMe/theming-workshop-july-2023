@@ -79,13 +79,12 @@
   ]
 %}
 {{ attach_library('reboot/node') }}
+
+{{ attach_library('reboot/node--article') }}
+
+{{ dump() }}
+
 <article{{ attributes.addClass(classes) }}>
-
-  <strong>{{ "Today" | t }}</strong>
-
-  {% trans %}
-  <p>Today is {{ today }}.</p>
-  {% endtrans %}
 
   {{ title_prefix }}
   {% if label and not page %}
@@ -96,7 +95,7 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-    <footer class="node__meta">
+    <footer class="node__meta d-flex align-items-center p-1 gap-2 mt-2 mb-2">
       {{ author_picture }}
       <div{{ author_attributes.addClass('node__submitted') }}>
         {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
@@ -106,7 +105,8 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+    {{ summary }}
   </div>
 
 </article>
+

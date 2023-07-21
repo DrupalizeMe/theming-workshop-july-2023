@@ -8,14 +8,13 @@
   --glow-4: 0 0 12px;
 }
 
+.region {
+  padding: 1rem;
+  border: 1px dashed #666666;
+}
+
 .jumbotron {
   padding: 2em;
   box-shadow: var(--glow-1) var(--color), var(--glow-2) var(--color), var(--glow-3) var(--color), var(--glow-4) var(--color),
   inset var(--glow-1) var(--color), inset var(--glow-2) var(--color), inset var(--glow-3) var(--color), inset var(--glow-4) var(--color);
-}
-
-.node--type-article .field--type-image img {
-  height: auto;
-  min-width: 100%;
-  width: 100%;
 }

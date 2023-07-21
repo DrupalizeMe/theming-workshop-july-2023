@@ -1,0 +1,44 @@
+# Metadata
+name: "Joe's awesome theme"
+type: theme
+'base theme': reboot
+starterkit: true
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.1'
+
+# Regions
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: 'Highlighted'
+  featured_top: 'Featured top'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+
+# Asset libraries included on every page.
+libraries:
+  - reboot/base
+  - reboot/messages
+  - core/normalize
+  - reboot/bootstrap
+  - reboot/global
+
+libraries-extend:
+  user/drupal.user:
+    - reboot/user
+  core/drupal.dropbutton:
+    - reboot/dropbutton
+  core/drupal.dialog:
+    - reboot/dialog
+  file/drupal.file:
+    - reboot/file
+  core/drupal.progress:
+    - reboot/progress
+

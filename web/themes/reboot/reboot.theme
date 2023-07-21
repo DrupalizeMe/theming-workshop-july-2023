@@ -19,3 +19,27 @@ function reboot_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implement hook_preprocess_HOOK().
+ */
+function reboot_preprocess_node(array &$variables) {
+  // {{ today }}
+  $variables['today'] = date('m-d-Y');
+
+  $variables['summary'] = [
+    '#markup' => $variables['node']->body->summary,
+  ];
+}
+
+/**
+ * Implement hook_theme_suggestions_HOOK_alter().
+ */
+function reboot_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+
+  if ($logged_in) {
+    // node--article-authenticated.html.twig
+    $suggestions[] = 'node__article_authenticated';
+  }
+}
